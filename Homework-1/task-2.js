@@ -1,4 +1,4 @@
-let userName = prompt("Введите ваше имя");
-const greeting = "приветсвую";
+// let userName = prompt("Введите ваше имя");
+// const greeting = "приветсвую";
 
-console.log(`${userName}, ${greeting}!`);
+// console.log(`${userName}, ${greeting}!`);

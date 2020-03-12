@@ -1,4 +1,4 @@
-// // "use strict" ;
+"use strict" ;
 
 
 
@@ -57,12 +57,12 @@
 // const x = 100;
 // const y = 5;
 // const b = 2;
-// console.log(x + y);
-// console.log(x - y);
-// console.log(x * y);
-// console.log(x / y);
-// console.log(x % y);
-// console.log(y ** b);
+// console.log(x + y);//Прибавление переменных х и у
+// console.log(x - y);//Вычитание  переменных х и у
+// console.log(x * y);//Умножение  переменных х и у
+// console.log(x / y);//Деление   переменных х и у
+// console.log(x % y); //Остаток от деления. К примеру 10/3 = 3 и остаток 1.
+// console.log(y ** b);// Вознесение у в степень b 
 // console.log((x - y) * b);
 // console.log((x - y)**2);
 
@@ -70,7 +70,7 @@
 // value = value - y;
 // console.log(value);
 
-// value += 45;
+// value += 45;// Для того чтоб прибавлять числа к переменной нужно всегда добавлять =. В консоль выведет число 45.
 // console.log(value);
 
 
@@ -78,7 +78,7 @@
 // const p = 3;
 // const t = 100;
 
-// console.log(p<r, p>t, r>=t)
+// console.log(p<r, p>t, r>=t)// В консоли будет выводит
 // console.log(r > p < t);
 // console.log(3 > 2 > 1);
 
