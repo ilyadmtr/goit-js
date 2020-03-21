@@ -209,3 +209,239 @@
 
 // animal = "CAT";
 // console.log(animal.toLocaleLowerCase());
+
+
+
+// 3-task
+
+// alert( true || true );   // true
+// alert( false || true );  // true  в этом операторе преимущество у значения true 
+// alert( true || false );  // true
+// alert( false || false ); // false
+
+
+// const age=30;
+// const trueAge= age<31 || age > 29; 
+// console.log(trueAge); // true
+
+// const trueAge2 = age <29 || age>31 || age >32 ;
+// console.log(trueAge); // true
+
+
+// alert( true && true );   // true
+// alert( false && true );  // false
+// alert( true && false );  // false
+// alert( false && false ); // false
+
+
+// const quantity=50;
+// console.log ((false && true) || true); // true
+// console.log (false && (true || true)); // false
+
+// console.log ((quantity > 39 && quantity < 49) || quantity > 48); // true
+
+// console.log ((false&&true) || NaN); // NaN
+
+
+
+// let day = prompt("Enter today day please");
+// let weekday;
+
+// switch (day) {
+//     case "Monday": // то есть в случае выполнения чего либо;
+//       weekday = "the worst workday at week"; // будет выполнятся вот это;
+//       break; // эта строчка для того, что бы комп выполнял не всё сразу а           то     только одну команду;
+   
+//     case "Tuesday":
+//       weekday = "a bit better workday"; 
+//       break;
+  
+//     case "Wednesday":
+//       weekday = "a workday and so it`s a small Friday)";
+//       break;
+  
+//     case "Thursday":
+//       weekday = "a strange workday";
+//       break;
+  
+//     case "Friday":
+//       weekday = "the best workday";
+//       break;
+  
+//     case "Saturday":
+//       weekday = " holiday";
+//       break;
+  
+//     case "Sunday":
+//       weekday = "also holiday";
+//       break;
+  
+//     default:
+//       alert("Invalid entered data");
+//   }
+//   console.log(`${day} is ${weekday}`); 
+
+
+
+//   let day = prompt("Enter today day please");
+
+// if (day === String("Saturday") || day === String("Sunday")) {
+//     weekday= "holiday";
+// }
+// else {
+//     weekday = "workday";
+// }
+// console.log(weekday);
+
+
+
+// let day = prompt("Enter today day please");
+// if (day === String("Saturday") || day === String("Sunday")) {
+//         weekday= "holiday";
+// }
+// else if (
+//     day === "Monday" ||
+//     day === "Tuesday" ||
+//     day === "Wednesday" ||
+//     day === "Thursday" ||
+//     day === "Friday" 
+//  ) {
+//      weekday = "workday";
+//  } else {
+//      weekday = "Indalid data";
+//  }
+//  console.log(day);
+//  console.log(weekday);
+
+
+
+//  let studentAge = prompt('Enter your age please');
+// let group;
+
+// if (studentAge >11 && studentAge < 15) {
+//     group = "Junior";
+// }
+// else if ( studentAge > 14 && studentAge < 18) {
+//     group = "Middle";
+// }
+// else {
+//     group = "Your age is not valid for children group.";
+// }
+// console.log(studentAge);
+// console.log(group);
+
+
+// let answer;
+// let question = confirm("Are you student?");
+
+// if (question === true) {
+//     answer = "yes";
+// }
+
+// else {
+//     answer = "no";
+// }
+
+
+// answer = question === true ? "yes" : "no"; // где «===» - это равно, «?» - тогда, «:» - во всех остальных случаях, или просто тег «else»;
+// console.log(answer);
+
+
+// const max = 100;
+
+// for (let i = 10; i <= max; i += 5) {
+//   console.log(i);
+// }
+
+
+// const target = 4;
+// let sum = 0;
+
+// for (let i = 0; i <= target; i += 1) {
+//   console.log(i);
+//   sum += i;
+// }
+// console.log(sum);
+
+
+
+// const max = 10;
+
+// for (let i = 0; i < max; i += 1) {
+//   console.log(`${max} % ${i} = , max % i`);
+// }
+
+
+
+// let counter = 0;
+
+// while (counter <10) {
+//     console.log("counter:", counter);
+//     counter += 1;
+// }
+// // в этом примере неравенство строгое, то есть ровно меньше 10 без знака =, то есть консоль выведет значения от 0 до 9 включительно;
+
+
+
+// let clientCounter = 18;
+// const maxClients = 25;
+
+// while (clientCounter < maxClients) {
+//     console.log(clientCounter);
+//     clientCounter += 1;
+// }
+// // консоль выведет числа от 19 до 24 включительно, потому что неравенство строгое;
+
+
+// let myFirstName = "Eva";
+// if (true) {
+//    console.log("BLOCK scope:", myFirstName);
+// }
+//    console.log("GLOBAL scope:", myFirstName);
+
+// // так же если первую строчку записать в третьей а впервой её убрать, то в консоли в глобальной строке выдаст ошибку. Можешь попробовать.
+
+
+
+// if (true) {
+//     let mySecondName = "Yesypenko";
+//     console.log("BLOCK scope:", mySecondName);
+// }
+//     console.log("GLOBAL scope:", mySecondName);
+
+
+
+
+//     const global = "global";
+
+// if (true) {
+//   const blockA = "block A";
+//   console.log(global); // global
+//   console.log(blockA); // block A
+//   //   console.log(blockB); // Uncaught ReferenceError: blockB is not defined at module1.js:463
+//   //   console.log(blockC); // Uncaught ReferenceError: blockB is not defined at module1.js:464
+
+//   if (true) {
+//     const blockB = "block B";
+//     console.log(global); // global
+//     console.log(blockA); // block A
+//     console.log(blockB); // block B
+//     // console.log(blockC); // Uncaught ReferenceError: blockB is not defined at module1.js:471
+// }
+// }
+
+// if (true) {
+//   const blockC = "block C";
+//   console.log(blockC); // block C
+//   console.log(global); // global
+//   //   console.log(blockA); // ReferenceError: blockA is not defined
+//   //   console.log(blockB); // ReferenceError: blockB is not defined
+// }
+
+// console.log(global); // global
+// console.log(blockA); // ReferenceError: blockA is not defined
+// console.log(blockB); // ReferenceError: blockB is not defined
+// console.log(blockC); // ReferenceError: blockC is not defined
+
+
+
