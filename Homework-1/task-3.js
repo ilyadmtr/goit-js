@@ -61,5 +61,5 @@
 
 //6
 // let random = (19-3) +1;
-// console.log(Math.random()* random );
+// console.log((Math.random()* random ).toFixed(2));
 
