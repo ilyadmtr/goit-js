@@ -17,16 +17,27 @@
 // let val;
 // console.log(val);
 // val = "River";
-// console.log(isNaN (val));//String
+// console.log(isNaN (val));//true
 // val = "Mountain";
-// console.log(isNaN (val));//String
+// console.log(isNaN (val));//true
 // val = 232;
-// console.log(isNaN (val));//Number
+// console.log(isNaN (val));//false
 // val = true;
-// console.log(isNaN(val));//Boolean
+// console.log(isNaN(val));//false
 // val = null;
-// console.log(isNaN (val));//Object
+// console.log(isNaN (val));//false
 
+// console.log(val);
+// val = "River";
+// console.log(typeof (val));//String
+// val = "Mountain";
+// console.log(typeof (val));//String
+// val = 232;
+// console.log(typeof (val));//Number
+// val = true;
+// console.log(typeof(val));//Boolean
+// val = null;
+// console.log(typeof(val));//Object
 
 //3
 // const alfa = 0.2;
