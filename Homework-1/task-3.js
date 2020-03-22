@@ -1,133 +1,54 @@
 "use strict"
 
+//1
+// const var1 = 1;
+// const var2 = 0;
+// const var3 = true;
 
-// //first
-// let total = 100;
-// let ordered = 50;
+// console.log(var1 > var2);//true, потому что 1 > 0
+// console.log(var1 == var3);//true, потому что true и есть единица а два знака равно сравнивают только значения переменных
+// console.log(var1 === var3);// false, потому что 3 равно сравнивают тип переменной. true это boolean, а 1 это number
+// console.log(var1 != var3) ;//false, потому что true  и есть единица
+// console.log(var2 != var3) ;// true, потому что 0 действительно не равен true(1)
+// console.log(var1 > var2 == var3);// true, потому что 1 > 0 что и равняется true
+// console.log( var1 > var2 > var3);// false, потому что  1 и вправду больше 0, что равняться true. Но true не может быть больше true.
 
-// if(total < ordered){
-//     console.log("На складе недостаточно товаров!")
-// }
-// else{
-//     console.log("Заказ оформлен, с вами свяжется менеджер")
-// }
-
-// total = 100;
-// ordered = 20;
-
-// if(total < ordered){
-//     console.log("На складе недостаточно товаров!")
-// }
-// else{
-//     console.log("Заказ оформлен, с вами свяжется менеджер")
-// }
-// total = 100;
-// ordered = 80;
-
-// if(total < ordered){
-//     console.log("На складе недостаточно товаров!")
-// }
-// else{
-//     console.log("Заказ оформлен, с вами свяжется менеджер")
-// }
-// total = 100;
-// ordered = 130;
-
-// if(total < ordered){
-//     console.log("На складе недостаточно товаров!")
-// }
-// else{
-//     console.log("Заказ оформлен, с вами свяжется менеджер")
-// }
-
-//second
-
-// const ADMIN_PASSWORD = 'jqueryismyjam';
-// let message;
-// let passentered = prompt("Enter your password");
-// console.log(passentered)
-
-// if(passentered === ADMIN_PASSWORD){
-//     message = "Добро пожаловать!";
-//     console.log(message);
-// }
-// else if(passentered === null){
-//  message = "Отменено пользователем!";
-//  console.log(message);
-// }
-// else{
-//     message = "Доступ запрещен, неверный пароль!";
-//     console.log(message);
-// }
-// alert(message);
-
-//third
-
-// let credits = 23580;
-// let pricePerDroid = 3000;
-// let quantityDroid = prompt("Enter quantity Droid");
-// let totalPrice;
-// console.log(quantityDroid);
-
-// if(quantityDroid === null){
-//     console.log("Отменено пользователем!");
-// }
-// else{
-//     totalPrice = quantityDroid * pricePerDroid;
-//     if(totalPrice > credits){
-//         console.log("Недостаточно средств на счету!")
-//     }
-//     else{
-//         credits = credits-totalPrice;
-//         console.log(`Вы купили ${quantityDroid} дроидов, на счету осталось ${credits} кредитов.`)
-//     }
-// }
-
-// fourth
-
-// let country = prompt("enter country")
-// let price;
-
-// console.log(country);
+//2
+// let val;
+// console.log(val);
+// val = "River";
+// console.log(isNaN (val));//String
+// val = "Mountain";
+// console.log(isNaN (val));//String
+// val = 232;
+// console.log(isNaN (val));//Number
+// val = true;
+// console.log(isNaN(val));//Boolean
+// val = null;
+// console.log(isNaN (val));//Object
 
 
-// switch(country){
+//3
+// const alfa = 0.2;
+// const beta = 0.4;
 
-//     case "Китай":
-//     price = 100;
-//     break;
+// const result = (alfa*10 + beta*10)/10;
+// console.log(result);
 
-//     case "Чили":
-//     price = 250;
-//     break;
 
-//     case "Австралия":
-//     price = 170;
-//     break;
+//4
+// let tetra;
 
-//     case "Индия":
-//     price = 80;
-//     break;
+// tetra = '12px';
+// console.log(tetra); // 12px
+// tetra = '13.34em';
+// console.log(tetra);  // 13.34em
 
-//     case "Ямайка":
-//     price = 120;
-//     break;
+//5
+// console.log(Math.max(2, 34, 99, 3, 22, 36, 733, 18))//733
+// console.log(Math.min(2, 34, 99, 3, 22, 36, 733, 18))//2
 
-//     default:
-//     alert("В вашей стране доставка не доступна")
-// }
-// console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
+//6
+// let random = (19-3) +1;
+// console.log(Math.random()* random );
 
- 
-//fifth
-
-// let total = 0;
-// let input = (prompt("Введите первое число"));
-
-// while (input) {
-//   input = +(prompt("Введите число"));// я не знаю почему, но без этого + все ломается
-//   total += input;
-//   console.log(total);
-// } ;
-
-// alert(`Общая сумма чисел равна ${total}`);
