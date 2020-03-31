@@ -1,4 +1,6 @@
-// "use strict"
+"use strict"
+
+//======================1 занятие=================== 
 
 // // const arr = [];
 // // console.log(arr);
@@ -141,6 +143,230 @@
 //     }
 // }
 // console.log(total);
+
+//==================================2 занятие====================================== 
+
+//присвоение по значению(для примитивов)
+// let a = 5;
+// let b = a;
+// console.log(a);//5
+// console.log(b);//5
+
+// a = 10;
+// console.log(a);//10
+// console.log(b);//5
+
+// let lastName = 'Dmytrenko';
+// let newLastname = lastName;
+// console.log(lastName);//Dmytrenko
+// console.log(newLastname);//Dmytrenko
+
+// lastName = 'Simonenko';
+// console.log(lastName)//Simonenko
+// console.log(newLastname);//Dmytrenko
+
+// //присвоение по значению(для сложных типов)
+// const units = ["alfa","beta","gamma"];
+// const newUnits = units;
+// console.log(units);//["alfa","beta","gamma"]
+// console.log(newUnits);//["alfa","beta","gamma"]
+
+// units[0] = '1';
+// console.log(units);//["1","beta","gamma"]
+// console.log(newUnits);//["1","beta","gamma"]
+
+// //МЕТОДЫ МАССИВОВ
+// //Добавление элементов
+
+// //.push() добавляет новій єелемент в конец массива
+// units.push("delta");
+// console.log(units);//["1","beta","gamma", "delta"];
+
+// //.unshift() добавляет новый элемент в начало массива 
+// newUnits.unshift("epsilon");
+// console.log(newUnits);//["epsilon","1","beta","gamma", "delta"];
+// console.log(units);//["epsilon","1","beta","gamma", "delta"];
+
+// //Удаление эелементов
+
+// // .pop() удаляет последний элемент из массива 
+// units.pop("");
+// console.log(units);////["epsilon","1","beta","gamma"];
+// console.log(newUnits);//["epsilon","1","beta","gamma"];
+
+
+// //.shift() удаляет первый [0] элемент из массива
+
+// newUnits.shift([0]);
+// console.log(newUnits);//[1","beta","gamma"];
+// console.log(units);//[1","beta","gamma"];
+
+
+// //Собрать эелементы 
+
+// //.join() массив в строку
+
+// console.log(units.join(""));//1betagamma
+// console.log(units.join(", ")); // 1, beta, gamma
+// console.log(units.join("-"));//1-beta-gamma
+
+// //Разбить элементы 
+
+// //.split() строку в массив
+// const msg = "Welcome to my world";
+// console.log(msg.split(" "));//["Welcome", "to", "my", "world"]
+// console.log(msg.split(""));
+
+// //Найти єелементы
+// //по индексу
+
+// //.indexOf() индекс эелемента, если он есть в массиве или отсутсвует элемента в массиве 
+// console.log(units.indexOf("beta"));//1
+// console.log(units.indexOf("b")); //-1
+
+// //по наличию
+
+// //.includes() указывает наличие или отсутствие элемента в массиве
+// console.log(msg.includes("to"));//true
+// console.log(msg.includes("WORLD"));//false
+// console.log(msg.includes("world"));//true
+// console.log(msg.includes("!"));//true
+// console.log(msg.includes("t"));//true
+
+// //проверка множества условий
+
+// const fruit = "apple";
+// if(fruit === "apple" || fruit === "srawberry"){
+//     console.log("It is a red fruit");
+// };
+
+// const redFruits = ["apple","srawberry", "cherry", "cranberry"];
+// const fruit = prompt("Enter a friut please");
+
+// if(redFruits.includes(fruit)){
+//     console.log("it is  a red fruit")
+// }else{
+//     console.log("it is not a fruit");
+// }
+
+//Скопировать массив
+
+//.slice(a, b) копирует элемент от а до b, не включая в новый массив 
+// const numList = [0,1,2,3,4,5,6,7];
+// console.log(numList.slice(0,3));//[0,1,2]
+// console.log(numList.slice(1,2));//[1]
+// console.log(numList.slice(1,5));//[1,2,3,4]
+// console.log(numList.slice(1));//[1,2,3,4,5,6,7,]
+// console.log(numList.slice(3));//[3,4,5,6,7]
+// console.log(numList.slice());//[0,1,2,3,4,5,6,7]
+// console.log(numList.slice(-1));//[7]
+// console.log(numList.slice(-2));//[6,7]
+// console.log(numList.slice(-3));//[5,6,7]
+
+// const newNumList = numList.slice(-4);
+// console.log(newNumList);
+
+// //Швейцарский нож
+
+// //.splice() изменяет исходный массив
+
+// //удаляет (нач.поз-я, кол-во эл-ов)
+
+// console.log("numList", numList);//[0,1,2,3,4,5,6,7]
+// const spliceArr = numList.splice(0,2);
+// console.log("spliceArr",spliceArr);//[0,1] удаленные элементы
+// console.log("numList", numList);//[2,3,4,5,6,7]измененные эелементы
+
+// //вставляет (нач.поз-я, 0,el1,el2,el3...)
+// console.log("numList",numList.splice(0,0,1));//[]
+// console.log("numList",numList);//[1,2,3,4,5,6,7] измененный
+// console.log("numList",numList.splice(7,0,8,9));//[1,2,3,4,5,6,7,8,9,]
+
+
+// //заменяет
+
+// console.log("numList", numList.splice(3,1,"Js"));
+// console.log("numList", numList);
+// console.log("numList", numList.splice(3,3,"Js"));
+// console.log(numList);//[1, 2, 3, "Js"]
+
+// //Обьединение массивов
+// //.concat()
+// const arr1 = ["Hello"];
+// const arr2 = ["World!"];
+// const lang = arr1.concat(arr2);
+// console.log(lang.join(", "));
+
+// const test1 = [4, 12, 6, 16, 13, 8, 13, 4, 15, 11, 14, 10, 15, 12];
+// const test2 =  [17, 13, 4, 15, 10, 12, 16, 21, 13, 8, 14, 18, 15, 20];
+// const test3 =  [20, 12, 16, 22, 13, 8, 13, 4, 15, 10, 14, 18, 15, 22];
+
+// const allTests = test1.concat(test2).concat(test3);
+// console.log(allTests);
+
+
+
+//FUNCTION
+
+//function expressions
+
+//обьявление фуекции
+// const add = function(a,b,c){
+//     return a + b + c;
+// };
+
+// //вызов функции
+
+// const result = add(1,2,3);
+// console.log(result);//6
+// console.log(add(5,10,15));
+// console.log(add(299,14,121));
+
+// //ПОРЯДОК ВЫПОЛНЕНИЯ КОДА
+// //обьявления
+// const fn1 = function(){
+//     console.log("1-я фнкция начала выполняться");
+// //вызов
+//     fn2();
+//     console.log("ПРодолжение выполнения 1-й функции после выхода из 2-й фуекции")
+
+// };
+// const fn2 = function(){
+//     console.log("Выполняется 2-я функция");
+// };
+
+// //вызов
+
+// console.log("Начато выполнение основного кода");
+// fn1();
+// console.log("Продолжение выполнения основного кода после выхода из 1-й функции");
+
+
+// const count  = function(a=0, b=10,c=1){
+//     console.log(`countForm = ${a}, countTo = ${b}, step = ${c}`)
+
+//     for(let i = a; i<=b;i+=c){
+//      console.log(i);
+//     }
+// }
+
+// count(1,5);
+// count(2);fu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

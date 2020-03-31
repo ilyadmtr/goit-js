@@ -55,6 +55,9 @@
 //     [20, 12, 16, 22, 13, 8, 13, 4, 15, 10, 14, 18, 15, 22]
 // ];
 
-// for (let test of tests) {
-//   console.log( test );
+// for (let i = 0;i < tests.length; i+=1) {
+//   console.log( tests[i] );
+//   for(let j = 0; j < tests.length; j+=1){
+//       console.log(tests[i][j]);
+//   }
 // }
