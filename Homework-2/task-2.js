@@ -22,9 +22,9 @@
 
 
 //==================3==================
-let results = [ 12, 32, 15, 17, 3, 4, 98, 67, 532, 611, 7, 100, 42];
-let removeFromStart = results.splice(0, 2);
-let removeFromEnd = results.splice(8,3);
+// let results = [ 12, 32, 15, 17, 3, 4, 98, 67, 532, 611, 7, 100, 42];
+// let removeFromStart = results.splice(0, 2);
+// let removeFromEnd = results.splice(8,3);
 
 // console.log(results);
 // console.log(removeFromStart);
