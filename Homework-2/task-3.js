@@ -12,30 +12,29 @@
 
 
 //=================2==============
+// let age = prompt("Enter your age");
 //FUNCTION EXPRESSIONS
 // let checkAge = function(){
 //     if(age >= 18){
-//         alert("Here you are! You are got access!")
+//         alert("Here you are! You are got access!");
 //     } 
 //     else{
-//         alert("Sorry, you can't to get access")
+//         alert("Sorry, you can't to get access");
 //     }
 // }
 //ARROW FUNCTION
-// let age = prompt("Enter your age");
-// let checkAge = () => (age >= 18) ?   alert("Here you are! You are got access!") :alert("Sorry, you can't to get access");
+// let checkAge = () => (age >= 18) ? alert("Here you are! You are got access!") : alert("Sorry, you can't to get access");
 
 // checkAge();
 
 //=================3=============
 //FUNCTION EXPRESS
 // let toGetCost = function(message, pricePerWord) {
-//     let words = message.split(" ");
-//     let countWords = words.length;
-//        return (pricePerWord = countWords * +pricePerWord);
+//     let countWords = message.split(" ").length;
+//        console.log(pricePerWord = countWords * +pricePerWord);
 // };
-// //ARROW FUNCTION 
-// // let toGetCost = (message, pricePerWord) => (+pricePerWord *= message.split(" ").length);
+//ARROW FUNCTION 
+// let toGetCost = (message, pricePerWord) => (pricePerWord = message.split(" ").length* pricePerWord);
 
 // console.log(toGetCost("To be, or not to be, that is the question", 10)); // 100
 // console.log(toGetCost("Whether 'tis nobler in the mind to suffer", 20)); // 160
@@ -61,18 +60,17 @@
 // logItems([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]);
 //==================5=============
 // //FUNCTION EXPRESS
-// let words;
+
 // let checkTheWord = function(message) {
 //   let words = message.split(" ");
-//   console.log(words);
 //   if (words.includes("lose") || words.includes("not")) {
-//     return true;
+//     console.log("true");
 //   }
-// //ARROW FUNCTION
+// }
+//ARROW FUNCTION
 // let checkTheWord = (message) => (message.split(" ").includes("lose") || message.split(" ").includes("not")) ?  true :  false;
 
   
- 
 // console.log(checkTheWord("Than fly to others that we know not of?")); // true
 // console.log(checkTheWord("Thus conscience does make cowards of us all")); // false
 // console.log(checkTheWord("And enterprises of great pitch and moment")); // false
@@ -97,4 +95,5 @@
   
 // myNewArrowFunction(1, 2, 3); [1, 2, 3]
 // myNewArrowFunction(100, 200, 300, 400, 500); [100, 200, 300, 400, 500]
-// myNewArrowFunction("Js", "Python", "Java", "PHP", "C++"); ["Js", "Python", "Java", "PHP", "C++"]
+// myNewArrowFunction("Js", "Python", "Java", "PHP", "C++");// ["Js", "Python", "Java", "PHP", "C++]
+

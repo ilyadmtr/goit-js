@@ -196,3 +196,83 @@ for(const entry of entries){
     const valuesOfHero = Object.value(hero);
     conso.log(valuesOfHero);
 }
+
+//=========ДОП ЗАНЯТИЕ=======
+const test1 = [18,14,12,21,17,29];
+const minTest1 = Math.min(test1);
+console.log(minTest1);//NaN
+
+const test2 = [18,14,12,21,17,29];
+const minTest2 = Math.min(...test2);
+
+
+
+const marvelHeroes = [
+    "Captain Marvel",
+    "Thanos",
+    "Black Panter",
+    "Goose the Cat",
+    "Black Widow",
+    "Captain America"
+  ];
+ 
+  console.log(marvelHeroes);
+
+  const copyOfMarvelHeroes = [...marvelHeroes];
+  console.log(copyOfMarvelHeroes);
+  const copyOfMarvelHeroes = marvelHeroes.slice();//то же самое
+
+
+  console.log(
+      marvelHeroes === copyOfMarvelHeroes
+  )//false - разные ссылки
+
+  //ДОБАВЛЕНИЕ ЭЛЕМЕНТОВ ПРИ РАСПЫЛЕНИИ
+const newCopyOfMarvelHeroes = [...marvelHeroes, "Hulk", "spider-Man"];
+//можно добавить элементы при копировании
+console.log("new copyOfMarvelHeroes", newCopyOfMarvelHeroes); 
+//добавлен Халк и Спайдермен
+
+const firstNum = [1,2,3];
+const secondNum = [4,5,6];
+
+const allNums1 = firstNum.concat(secondNum);
+const allNumsReverse1 = secondNum.concat(firstNum);
+console.log(allNums1);
+console.log(allNumsReverse1);
+
+const allNums2 = [...firstNum, ...secondNum];
+const allNumsReverse2 = [...secondNume, ...firstNum];
+console.log(allNums2);
+console.log(allNumsReverse2);
+
+//КОНКАТЕНАЦИЯ МАССИВОВ ПРИ РАСПІЛЕНИИ частично
+const notAllNums = [...firstNum.slice(0,1), ...secondNum.slice(-1)];
+console.log(notAllNums);//[1,6]
+
+//КОНКАТЕНАЦИЯ МАССИВОВ ПРИ РАСПІЛЕНИИ с добавлением  эелемента
+const updateNums = [
+    ...firstNum.slice(0,2),
+    "js is the best ",
+    ...secondNum.slice(-2)
+];
+console.log(updateNums);//[1,2, "js is the best"]
+
+
+const mod_1 = {test:2, hw:3, addit:2};
+const mod_2 = {test:4, hw:6};
+
+const mod_3 = Object.assign({},mod_1,mod_2);
+console.log(mod_3);
+
+
+const a = {x: 1, y: 2 };
+const b = {x:5, j:10, }
+
+
+
+
+
+
+
+
