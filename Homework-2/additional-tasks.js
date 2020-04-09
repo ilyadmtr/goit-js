@@ -26,7 +26,7 @@
 //           longWord = wordsMassive[i];
 //         }
 //       }
-//       consolt.log(longWord);
+//       console.log(longWord);
 //     };
 
 // console.log(
