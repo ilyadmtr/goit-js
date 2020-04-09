@@ -12,6 +12,11 @@
 //   }
 //   console.log(homework);
 // };
+// const homeworkIsDone = (pass, homework) =>
+//   (pass =
+//     prompt("Please enter the result of student`s work") == true
+//       ? (homework = "homework is done!")
+//       : (homework = "You must to pass the homework!"));
 
 // homeworkIsDone();
 
