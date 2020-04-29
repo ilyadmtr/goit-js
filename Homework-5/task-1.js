@@ -4,7 +4,7 @@ const Account = function(login, email, getInfo){
   this.login = login;
   this.email = email;
   this.getInfo = function(){
-    console.log(`Login: ${email}, Email: ${login}`)
+    return`Login: ${email}, Email: ${login}`;
   }
 }
 console.log(Account.prototype.getInfo); // function
