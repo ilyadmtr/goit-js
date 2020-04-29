@@ -1,11 +1,11 @@
 "use strict"
 
-const Account = function(login, email, getInfo){
+const Account = function(login, email){
   this.login = login;
   this.email = email;
-  this.getInfo = function(){
-    return`Login: ${email}, Email: ${login}`;
-  }
+}
+Account.prototype.getInfo = function(){
+    return`Login: ${this.email}, Email: ${this.login}`;
 }
 console.log(Account.prototype.getInfo); // function
 const mango = new Account('Mangozedog', 'mango@dog.woof');
